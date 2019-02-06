@@ -26,7 +26,7 @@ if(server_version == "no") {
   setwd("~/R_projects/NHMIS_Monthly_Analysis/")
 }
 DXXs <- read.csv(file = "dataelementsid.csv", header = TRUE, sep = ",", as.is = TRUE)
-login <- read.csv(file = "DHIS2login.csv")
+# login <- read.csv(file = "DHIS2login.csv")
 if(server_version == "yes") {
   setwd("data")
   source("/srv/shiny-server/e4e-apps/functions/collect_return_period_fxn2.R")
